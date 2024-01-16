@@ -4,17 +4,25 @@ Mustom benchmarked other ecommerce platforms like Magento. So most business logi
 
 
 
-Storefront and admin panel are decoupled from backend
+**Storefront and admin panel are decoupled from backend**
+
+Frontend of Mustom is completely decoupled from backend. Yes! it is so called headless architecture. There's almost zero limitation to customizing your storefront, and you can build your store with any platforms or libraries like React, Angular, or Vue. Not only storefront, admin panel also decoupled from backend. That means you are free to change admin panel.
 
 **SKU is not an unique value**
 
-Unlike other ecommerce platform, SKU is not a unique value in Mustom, because of multiple channel feature.
+Unlike other ecommerce platforms, SKU is not a unique value in Mustom, because of multiple channel feature.
 
-Order is created as soon as checkout process has begin
+**Order is created as soon as checkout process has begin**
+
+To simplify cart logic, order is created much earlier than other ecommerce platform. So cart feature don't need to handle additional logics like address and discount. (But there are some drawbacks. For instance, lots of abandon orders will be generated.
+
+**Buy now feature**
+
+Mustom provide built-in buy now feature. So, customer can place order very quickly.
 
 Stock quantity is managed by both Redis and DB
 
-**Order from guest user**
+**Guest order**
 
 Guest user can place order. And they can track\&trace their order, and request cancellation. (If you want you can disallow guest order through admin panel.)
 
@@ -34,7 +42,7 @@ Mustom provide 'Replacement' as a resolution of dispute. If replacement request 
 
 **Order by admin user**
 
-Admin can create order throuth admin panel. But, real payment through payment service can not made.
+Mustom offer admin order through admin panel. But, there is some limitation. Only offline  Real payment through payment service can not made, because of personal information issue.
 
 Multiple Channels
 
