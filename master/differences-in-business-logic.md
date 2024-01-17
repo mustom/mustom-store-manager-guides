@@ -46,7 +46,7 @@ Mustom offer admin order through admin panel. But, there is some limitation. Onl
 
 **Multiple Channels**
 
-The concept of multiple channel is a bit different from multiple store feature of other ecommerce platform. In short, multiple channel is less ..
+I thought there were many of drawbacks behind multiple store feature and it will make overall logic complicated. The concept of multiple channel in mustom is a bit different from multiple store feature of other ecommerce platform. It short, it is minimal version of multiple store feature. Channel feature designed for multiple storefront(device) of customers in same country. It is not designed for multiple storefronts, or websites of multiple countries, and different localization.
 
 **Product type**
 
