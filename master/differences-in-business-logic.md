@@ -1,8 +1,6 @@
 # Differences in Business Logic
 
-Mustom benchmarked other ecommerce platforms like Magento. So most business logic is simular to these platform. But, some logics are different from others.
-
-
+> Mustom benchmarked other ecommerce platforms like Magento. So most business logic is simular to these platform. But, some logics are different from others.&#x20;
 
 **Storefront and admin panel are decoupled from backend**
 
@@ -10,7 +8,7 @@ Frontend of Mustom is completely decoupled from backend. Yes! it is so called he
 
 **SKU is not an unique value**
 
-Unlike other ecommerce platforms, SKU is not a unique value in Mustom, because of multiple channel feature.
+Unlike other ecommerce platforms, SKU is not a unique value in Mustom because of some reason. However you can make it unique by change database table scheme.
 
 **Order is created as soon as checkout process has begin**
 
@@ -30,7 +28,9 @@ Guest user can place order. And they can track\&trace their order, and request c
 
 Some ecommerce platfrom define that 'cancellation' is reversal order of pending payment. But in Mustom, cancellation can be requested even if payment is made. The cancallation of Mustom is reverse order that has not shipped. (Admin user can set which order statuses can accept cancallation throught admin panel.)&#x20;
 
-Cancellation and dispute scope
+**Cancellation and dispute scope**
+
+Cancellation and dispute can be requested by item level, and quantity level. Let's say you've ordered 3pcs of item A, and 1pc of item B. In this case you can request cancellation for 2pcs of item A.
 
 **Order/Dispute statuses are adderble and editable**
 
@@ -44,19 +44,17 @@ Mustom provide 'Replacement' as a resolution of dispute. If replacement request 
 
 Mustom offer admin order through admin panel. But, there is some limitation. Only offline  Real payment through payment service can not made, because of personal information issue.
 
-Multiple Channels
+**Multiple Channels**
 
-The concept of multiple channel is a bit different from multiple store feature of other ecommerce platform.&#x20;
-
-Multiple Currencies
+The concept of multiple channel is a bit different from multiple store feature of other ecommerce platform. In short, multiple channel is less ..
 
 **Product type**
 
-Mustom only provide simple product at this stage. There's no feature to combine multiple products to one product. Instead you can use option feature.
+Mustom only provide simple product at this stage. There's no feature to combine multiple products to one product. Instead, you could use product option feature for this case. You can set stock, and price for each option.&#x20;
 
-Options and its stock
+**Product options and its stock**
 
-Some actions are not real-time
+Like I mentioned above, each product option can have their stock, and price. And, one item can have multiple options.
 
 **Definition of module and app**
 
