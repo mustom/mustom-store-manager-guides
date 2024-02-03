@@ -58,7 +58,16 @@ Like I mentioned above, each product option can have their stock, and price. And
 
 **Definition of module and app**
 
-New features can be added by adding new modules, or apps. The difference between modules apps are 1) App is managed by service registry. So it is not registered in service registry, it will not working. 2) App provide its own menu on admin panel, and easy to install. &#x20;
+New features can be added by adding custom modules, or apps. The difference between modules apps are written below.
+
+* App is managed by service registry. So it is not registered in service registry, it will not working.
+* App provide its own menu on admin panel, and easy to install.&#x20;
+
+
+
+{% hint style="info" %}
+It is recommended to develop as a custom module, in case newly added features can be affect, or override, core modules.&#x20;
+{% endhint %}
 
 **CMS features are quite simple**
 
