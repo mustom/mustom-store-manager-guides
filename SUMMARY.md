@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Welcome on board!](README.md)
-  * [Major Features](master/major-features.md)
   * [Differences in Business Logic](master/differences-in-business-logic.md)
+  * [Features](master/features.md)
 * [Configurations](configuration/README.md)
   * [Initial Configuration](configuration/initial-configuration.md)
   * [Channels](configuration/channels.md)
@@ -22,7 +22,10 @@
   * [Invoice](order-management/invoice.md)
   * [Shipment](order-management/shipment.md)
   * [Dispute](order-management/dispute.md)
+* [Cancellation](cancellation.md)
 * [Dispute](dispute.md)
+* [Invoice](invoice.md)
+* [Credit Memo](credit-memo.md)
 * [Store Credit](store-credit/README.md)
   * [General Rules](store-credit/general-rules.md)
 * [Reward Point](reward-point.md)
